@@ -24,9 +24,9 @@ defineProps<{
         opacity: 1,
         filter: 'blur(0px)'
       }" :transition="{
-          duration: 0.6,
-          delay: 0.1
-        }">
+        duration: 0.6,
+        delay: 0.1
+      }">
         <UColorModeAvatar class="size-18 ring ring-default ring-offset-3 ring-offset-(--ui-bg)"
           :light="global.picture?.light!" :dark="global.picture?.dark!" :alt="global.picture?.alt!" />
       </Motion>
@@ -42,9 +42,9 @@ defineProps<{
         opacity: 1,
         filter: 'blur(0px)'
       }" :transition="{
-          duration: 0.6,
-          delay: 0.1
-        }">
+        duration: 0.6,
+        delay: 0.1
+      }">
         {{ page.title }}
       </Motion>
     </template>
@@ -59,9 +59,9 @@ defineProps<{
         opacity: 1,
         filter: 'blur(0px)'
       }" :transition="{
-          duration: 0.6,
-          delay: 0.3
-        }">
+        duration: 0.6,
+        delay: 0.3
+      }">
         {{ page.description }}
       </Motion>
     </template>
@@ -76,9 +76,9 @@ defineProps<{
         opacity: 1,
         filter: 'blur(0px)'
       }" :transition="{
-          duration: 0.6,
-          delay: 0.5
-        }">
+        duration: 0.6,
+        delay: 0.5
+      }">
         <div v-if="page.hero.links" class="flex items-center gap-2">
           <UButton v-bind="page.hero.links[0]" />
           <UButton :color="global.available ? 'success' : 'error'" variant="ghost" class="gap-2"
@@ -106,30 +106,30 @@ defineProps<{
           opacity: 1,
           filter: 'blur(0px)'
         }" :transition="{
-            duration: 0.6,
-            delay: 0.5 + index * 0.1
-          }">
+          duration: 0.6,
+          delay: 0.5 + index * 0.1
+        }">
           <UButton v-bind="{ size: 'md', color: 'neutral', variant: 'ghost', ...link }" />
         </Motion>
       </div>
     </template>
 
-    <!-- <UMarquee pause-on-hover class="py-2 -mx-8 sm:-mx-12 lg:-mx-16 [--duration:40s]">
+    <UMarquee pause-on-hover class="py-2 -mx-8 sm:-mx-12 lg:-mx-16 [--duration:40s]">
       <Motion v-for="(img, index) in page.hero.images" :key="index" :initial="{
         scale: 1.1,
         opacity: 0,
         filter: 'blur(20px)'
       }" :animate="{
-          scale: 1,
-          opacity: 1,
-          filter: 'blur(0px)'
-        }" :transition="{
+        scale: 1,
+        opacity: 1,
+        filter: 'blur(0px)'
+      }" :transition="{
           duration: 0.6,
           delay: index * 0.1
         }">
         <NuxtImg width="234" height="234" class="rounded-lg aspect-square object-cover"
           :class="index % 2 === 0 ? '-rotate-2' : 'rotate-2'" v-bind="img" />
       </Motion>
-    </UMarquee> -->
+    </UMarquee>
   </UPageHero>
 </template>
