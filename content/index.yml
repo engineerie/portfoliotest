@@ -9,24 +9,14 @@ hero:
       to: https://github.com/nuxt-ui-templates/portfolio
       color: "neutral"
   images:
-    - src: /hero/random-1.jpeg
+    - src: /hero/Carpenter-1.jpeg
       alt: Random Image 1
-    - src: /hero/random-2.jpeg
+    - src: /hero/Carpenter-2.jpeg
       alt: Random Image 2
-    - src: /hero/random-3.jpeg
+    - src: /hero/Carpenter-3.jpeg
       alt: Random Image 3
-    - src: /hero/random-4.jpeg
+    - src: /hero/Carpenter-4.jpeg
       alt: Random Image 4
-    - src: /hero/random-5.jpeg
-      alt: Random Image 5
-    - src: /hero/random-6.jpeg
-      alt: Random Image 6
-    - src: /hero/random-7.jpeg
-      alt: Random Image 7
-    - src: /hero/random-8.jpeg
-      alt: Random Image 8
-    - src: /hero/random-9.jpeg
-      alt: Random Image 9
 about:
   title: "About Me"
   description: |
